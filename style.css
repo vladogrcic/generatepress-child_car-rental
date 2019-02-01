@@ -72,14 +72,14 @@ Text Domain: genertepress-child
     .site-branding * {
         color: white;
     }
-	.site-logo {
-		min-width: 100%;
-	}
-	.site-logo *{
-		display:block;
-		margin-left: auto;
-		margin-right:auto;
-	}
+    .site-logo {
+	min-width: 100%;
+    }
+    .site-logo *{
+	display:block;
+	margin-left: auto;
+	margin-right:auto;
+    }
     #main-header {
         background-color: #AB0000;
         width: 100%;
@@ -384,5 +384,7 @@ Text Domain: genertepress-child
         padding-top: 10px;
         border-top: solid 1px #646464;
     }
-
+    .products-by-category .menu{
+	background-color: white;
+    }
 }
