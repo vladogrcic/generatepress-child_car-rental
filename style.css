@@ -353,7 +353,7 @@ Text Domain: generatepress-child_car-rental
 
     .products-by-category>ul>li {
         width: 18%;
-        height: 275px;
+        min-height: 275px;
         vertical-align: bottom;
         cursor: pointer;
         display: inline-block;
@@ -386,6 +386,7 @@ Text Domain: generatepress-child_car-rental
 
     .products-by-category .image {
         min-height: 200px;
+        padding: 6px;
     }
 
     .products-by-category .image img {
