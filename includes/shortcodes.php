@@ -68,34 +68,27 @@ if (! function_exists('products_custom_shop')) {
             } ?>
             <li data-order="<?php echo $i; ?>">
                 <a>
-                <div class="image">
-                    <?php echo $products[$i]->get_image(); ?>
-                </div>
-                <div class="info">
-                    <div class="title">
-                    <?php echo $products[$i]->get_name(); ?>
+                    <div class="image">
+                        <?php echo $products[$i]->get_image(); ?>
                     </div>
-                    <div class="price">
-                    <?php echo $products[$i]->get_price().get_woocommerce_currency_symbol(); ?>/<?php echo $duration; ?>
+                    <div class="info">
+                        <div class="title">
+                        <?php echo $products[$i]->get_name(); ?>
+                        </div>
+                        <div class="price">
+                        <?php echo $products[$i]->get_price().get_woocommerce_currency_symbol(); ?>/<?php echo $duration; ?>
+                        </div>
                     </div>
-                </div>
                 </a>
                 <script>
-                var add = {};
-                add.data = {};
-                    if(
-                    <?php
-                        echo json_encode($customProductAttr); ?> !== false
-                    )
-                add.data = 
-                <?php
-                    echo json_encode($customProductAttr); ?>;
-                else
-                add.title = '<?php echo $products[$i]->get_name(); ?>';
-                add.image = '<?php echo $image[0]; ?>';
-                add.itemLink = '<?php echo $link; ?>';
-                add.price = '<?php echo $products[$i]->get_price().get_woocommerce_currency_symbol(); ?>/<?php echo $duration; ?>';
-                carInfo.push(add);
+                    var add = {};
+                    add.data = {};
+                    add.data = <?php echo json_encode($customProductAttr); ?>;
+                    add.title = '<?php echo $products[$i]->get_name(); ?>';
+                    add.image = '<?php echo $image[0]; ?>';
+                    add.itemLink = '<?php echo $link; ?>';
+                    add.price = '<?php echo $products[$i]->get_price().get_woocommerce_currency_symbol(); ?>/<?php echo $duration; ?>';
+                    carInfo.push(add);
                 </script>
             </li>
             <?php endfor; ?>
