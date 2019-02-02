@@ -6,7 +6,8 @@ if (! function_exists('products_custom_shop')) {
     // Add Shortcode
     function products_custom_shop($atts)
     {
-        wp_enqueue_style('custom_product-car_rental', get_stylesheet_directory_uri() . '/css/custom_product-car_rental.css', false, '1.1', 'all');
+        wp_enqueue_style('custom_product-car_rental-main', get_stylesheet_directory_uri() . '/css/custom_product_shortcode-car_rental/main.css', false, '1.1', 'all');
+        wp_enqueue_style('custom_product-car_rental-popout_modal', get_stylesheet_directory_uri() . '/css/custom_product_shortcode-car_rental/popup-modal.css', false, '1.1', 'all');
 
         $atts = shortcode_atts(
             array(
