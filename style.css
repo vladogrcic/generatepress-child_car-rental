@@ -388,6 +388,10 @@ Text Domain: genertepress-child_car-rental
         border-top: solid 1px #646464;
     }
 
+    .products-by-category .image {
+        min-height: 178px;
+    }
+
     .products-by-category .image img {
         background-color: white;
     }
