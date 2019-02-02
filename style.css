@@ -392,3 +392,64 @@ Text Domain: generatepress-child_car-rental
         background-color: white;
     }
 }
+
+@media screen and (max-width: 768px) {
+
+    /*####################################*/
+    /* Shop By Categories Style */
+    /*####################################*/
+    .products-by-category {
+        width: 100%;
+    }
+
+    .products-by-category>ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .products-by-category>ul>li {
+        width: 100%;
+        min-height: 375px;
+        vertical-align: bottom;
+        cursor: pointer;
+        display: inline-block;
+        background-color: #f1f1f1;
+        border: solid 1px #cecece;
+        margin-right: 8px;
+        margin-bottom: 10px;
+    }
+
+    .products-by-category>ul>li>a>.info {
+        padding: 10px;
+        padding-top: 0;
+    }
+
+    .products-by-category>ul>li>a>.info>* {
+        color: black;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .products-by-category>ul>li>a>.info>*:hover {
+        color: black;
+    }
+
+    .products-by-category>ul>li>a>.info>.title {
+        padding-top: 10px;
+        border-top: solid 1px #646464;
+    }
+
+    .products-by-category .image {
+        min-height: 200px;
+        padding: 10px;
+    }
+
+    .products-by-category .image img {
+        background-color: white;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
