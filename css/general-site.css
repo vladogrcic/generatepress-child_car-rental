@@ -179,4 +179,119 @@
     }
 }
 
-@media screen and (max-width: 768px) {}
+@media screen and (max-width: 768px) {
+    /* #################################### */
+    /* Header Style */
+    /* #################################### */
+
+    .site-branding {
+        padding-bottom: 25px;
+    }
+
+    #masthead {
+        padding-bottom: 20px;
+    }
+
+    #masthead .inside-header {
+        padding-bottom: 20px;
+    }
+
+    .site-branding .main-title a,
+    .site-branding * {
+        color: white;
+    }
+
+    .site-logo {
+        min-width: 100%;
+    }
+
+    .site-logo * {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #main-header {
+        background-color: #AB0000;
+        width: 100%;
+        position: relative;
+        min-height: 280px;
+        box-shadow: 0px 10px 8px #bdbdbd;
+    }
+
+    #masthead {
+        background-color: transparent;
+    }
+
+    #site-navigation .inside-navigation {
+        background-color: rgb(85, 0, 0);
+    }
+
+    #site-navigation .inside-navigation #primary-menu {
+        background-color: rgb(129, 0, 0);
+    }
+
+    #site-navigation .inside-navigation #primary-menu .menu li {
+        border-bottom: 2px solid rgb(145, 45, 45);
+    }
+
+    #contact-info {
+        background-color: #646464;
+        /* height: 50px; */
+    }
+
+    #contact-info>* {
+        margin: 15px;
+    }
+
+    #contact-info>*>* {
+        margin-right: 35px;
+    }
+
+    #contact-info .contact {
+        margin: 15px;
+        max-height: 25px;
+    }
+
+    #contact-info>*>*>* {
+        margin-right: 10px;
+
+    }
+
+    #contact-info>*>*>img {
+        float: left;
+
+    }
+
+    #contact-info>*>*>span {
+        float: right;
+        margin-bottom: 25px;
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+    }
+
+    #contact-info .social {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    #contact-info .contact {
+        width: 100%;
+    }
+
+    #contact-info .contact .phone {
+        float: left;
+    }
+
+    #contact-info .contact .phone {
+        float: right;
+    }
+
+    #contact-info .contact>*>* {
+        float: left;
+    }
+}
