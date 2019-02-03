@@ -26,13 +26,13 @@ if (!defined('ABSPATH')) {
 				<img src="<?php echo get_stylesheet_directory_uri() . '/img/Instagram.png' ?>" alt="">
 			</div>
 			<div class="contact">
-				<div class="phone">
+				<div class="phone clearfix">
 					<img src="<?php echo get_stylesheet_directory_uri() . '/img/Phone.png' ?>">
 					<span>
 						+385 91 000 000
 					</span>
 				</div>
-				<div class="email">
+				<div class="email clearfix">
 					<img src="<?php echo get_stylesheet_directory_uri() . '/img/Mail.png' ?>">
 					<span>
 						sacfdsa@dfgd.com
