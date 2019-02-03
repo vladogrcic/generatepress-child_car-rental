@@ -237,9 +237,12 @@
 
     #contact-info {
         background-color: #646464;
-        /* height: 50px; */
+
     }
 
+    #contact-info *{
+        font-size: 1em;
+    }
     #contact-info>* {
         margin: 15px;
     }
