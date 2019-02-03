@@ -5,6 +5,7 @@ if (!defined('ABSPATH')) {
 ?>
 <script>
 	jQuery('.entry-content').on('click', '.products-by-category > ul > li', function (e) {
+		jQuery('body').css('overflow', 'hidden');
 		jQuery(this).data("order");
 		var cList = jQuery('#car-info-popup > .modal > .description > .info');
 		var car = carInfo[jQuery(this).data("order")];
@@ -69,7 +70,9 @@ if (!defined('ABSPATH')) {
     });
     jQuery('.entry-content').on('click', '.overlay', function (e) {
 		e.stopPropagation();
-        jQuery('#car-info-popup-wrapper').hide();
+		jQuery('#car-info-popup-wrapper').hide();
+		jQuery('body').css('overflow', 'auto');
+
     });
 </script>
 <?php if (!isset($image[0])) {

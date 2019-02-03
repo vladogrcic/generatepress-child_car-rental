@@ -125,3 +125,130 @@
         /* padding-bottom: 25px; */
     }
 }
+@media screen and (max-width: 768px) {
+
+    /*####################################*/
+    /* Car Info Modal Style */
+    /*####################################*/
+    #car-info-popup-wrapper {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9999;
+    }
+
+    #car-info-popup-wrapper>.overlay {
+        background-color: rgba(0, 0, 0, 0.8);
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 999;
+    }
+
+    #car-info-popup-wrapper>#car-info-popup {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0%;
+        right: 0%;
+        top: 0;
+        bottom: 5%;
+        background-color: white;
+        overflow: auto;
+        z-index: 99999999;
+    }
+
+    #car-info-popup-wrapper>#car-info-popup>.modal>.image {
+        height: 280px;
+    }
+
+    #car-info-popup-wrapper>#car-info-popup>.modal>.image>div {
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+
+    #car-info-popup-wrapper>#car-info-popup>.modal>.title {
+        height: 60px;
+        background-color: #610000;
+
+    }
+
+    #car-info-popup-wrapper>#car-info-popup>.modal>.title>h2 {
+        color: rgb(255, 255, 255);
+        margin: 0;
+        padding: 10px;
+        padding-left: 20px;
+        font-size: 26px;
+        font-weight: bold;
+    }
+
+    #car-info-popup-wrapper>#car-info-popup>.modal>.description {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+    }
+
+    #car-info-popup-wrapper>#car-info-popup>.modal>.description>.title {
+        margin-top: 15px;
+
+    }
+
+    #car-info-popup-wrapper>#car-info-popup>.modal>.description>.info,
+    #car-info-popup-wrapper>#car-info-popup>.modal>.description>.title {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #car-info-popup-wrapper>#car-info-popup>.modal>.description>.title>h2 {
+        margin: 0;
+        padding-bottom: 15px;
+        margin-bottom: 10px;
+        border-bottom: solid 2px #cfcfcf;
+    }
+
+    #car-info-popup-wrapper>#car-info-popup>.modal>.description>.info {
+        padding-bottom: 15px;
+    }
+
+    #car-info-popup-wrapper>#car-info-popup>.modal>.description>.link-to-item {
+        display: block;
+        margin-left:auto;
+        margin-right:auto;
+        width: 20%;
+        padding: 8px 12px;
+        border: solid 1px grey;
+        background-color: #B90000;
+        color: white;
+        font-weight: bold;
+        border-radius: 12px;
+    }
+
+    #car-info-popup-wrapper>#car-info-popup>.modal>.description>.info>ul {
+        float: left;
+        list-style-type: none;
+        margin: 0;
+    }
+
+
+    #car-info-popup-wrapper>#car-info-popup>.modal>.description>.info>.icons {
+        height: 100%;
+        line-height: 35px;
+
+    }
+
+    #car-info-popup-wrapper>#car-info-popup>.modal>.description>.info>ul:not(.icons) {
+        height: 100%;
+        line-height: 45px;
+        margin-left: 5px;
+        /* padding-top: 5px; */
+        /* padding-bottom: 25px; */
+    }
+}
