@@ -68,7 +68,7 @@ if (!defined('ABSPATH')) {
         ul += '</ul>';
         cList.append(ul);
     });
-    jQuery('.entry-content').on('click', '.overlay', function (e) {
+    jQuery('.entry-content').on('click', '.overlay, .popup-cancel', function (e) {
 		e.stopPropagation();
 		jQuery('#car-info-popup-wrapper').hide();
 		jQuery('body').css('overflow', 'auto');
@@ -112,6 +112,7 @@ if (!defined('ABSPATH')) {
 				<a class="link-to-item" href="">Rent It! 🡆</a>
 				<p>*the price stated is valid for long term rentals 30+ days</p>
 			</div>
-		</div>
+		</div><div class="popup-cancel">x</div>
 	</div>
+	
 </div>

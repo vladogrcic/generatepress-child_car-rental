@@ -252,3 +252,29 @@
         /* padding-bottom: 25px; */
     }
 }
+.popup-cancel {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    width: 55px;
+    height: 55px;
+    line-height: 40px;
+    color: rgb(105, 3, 3);
+    background-color: #af2626;
+    z-index: 999999999999;
+    border-radius: 50%;
+    font-size: 45px;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+
+    -webkit-transition: background-color 0.5s,
+        color 0.5s;
+    transition: background-color 0.5s,
+        color 0.5s;
+}
+
+.popup-cancel:hover {
+    color: rgb(235, 83, 83);
+    background-color: #550303;
+}
