@@ -239,9 +239,6 @@
 
     }
 
-    /* #contact-info *{
-        font-size: 0.88em;
-    } */
     #contact-info>* {
         margin: 15px;
     }
@@ -280,18 +277,22 @@
     }
 
     #contact-info .contact {
-        /* min-width: 100%; */
         display: flex;
         align-items: center;
         justify-content: center;
+        flex-direction: column;
     }
 
     #contact-info .contact>* {
-        /* min-width: 100%; */
+        min-width: 50%;
         clear: both;
         display: block;
         margin-left: auto;
         margin-right: auto;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: row;
     }
     
     #contact-info .contact>*>* {
