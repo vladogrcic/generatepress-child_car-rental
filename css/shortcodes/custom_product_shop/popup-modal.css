@@ -258,14 +258,14 @@
     top: 15px;
     width: 55px;
     height: 55px;
-    line-height: 40px;
+    line-height: 48px;
     color: rgb(105, 3, 3);
     background-color: #af2626;
     z-index: 999999999999;
     border-radius: 50%;
     font-size: 45px;
     text-align: center;
-    font-weight: bold;
+    font-weight: 900;
     cursor: pointer;
 
     -webkit-transition: background-color 0.5s,

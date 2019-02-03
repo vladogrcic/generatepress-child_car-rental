@@ -112,7 +112,8 @@ if (!defined('ABSPATH')) {
 				<a class="link-to-item" href="">Rent It! 🡆</a>
 				<p>*the price stated is valid for long term rentals 30+ days</p>
 			</div>
-		</div><div class="popup-cancel">x</div>
+		</div>
+		<div class="popup-cancel">x</div>
 	</div>
 	
 </div>
