@@ -19,11 +19,60 @@ if (! function_exists('products_custom_shop')) {
             $atts,
             'products_custom_shop'
         );
-        $products = wc_get_products(array(
-        'category' => array('Cars'),
-        'post_status' => 'published',
-        'bookable' => 'yes',
-        ));
+        $order_inv_p = 'asc';
+        $order_inv_d = 'asc';
+        if (isset($_GET['ch_orderby'])) {
+            $orderby = sanitize_text_field($_GET['ch_orderby']);
+        } else {
+            $orderby = 'date';
+        }
+        if (isset($_GET['ch_order'])) {
+            $order = sanitize_text_field($_GET['ch_order']);
+        } else {
+            $order = 'asc';
+        }
+        if(!isset($orderby) && !isset($order)){
+            $products = wc_get_products(array(
+                'category' => array('Cars'),
+                'post_status' => 'published',
+                'bookable' => 'yes',
+                'order' => 'asc',
+            ));
+        }else{
+            if ($orderby == 'price') {
+                $current_sort_page = 'Price';
+                $products = wc_get_products(array(
+                    'category' => array('Cars'),
+                    'post_status' => 'published',
+                    'bookable' => 'yes',
+                    'orderby'   => 'meta_value_num',
+                    'meta_key'  => '_price',
+                    'order' => $order,
+                ));
+                if ($order == 'asc') {
+                    $order_inv_p = 'desc';
+                }
+                if ($order == 'desc') {
+                    $order_inv_p = 'asc';
+                }
+            }
+            if ($orderby == 'date') {
+                $current_sort_page = 'Date';
+                $products = wc_get_products(array(
+                    'category' => array('Cars'),
+                    'post_status' => 'published',
+                    'bookable' => 'yes',
+                    'orderby' => 'date',
+                    'order' => $order,
+                ));
+                if ($order == 'asc') {
+                    $order_inv_d = 'desc';
+                }
+                if ($order == 'desc') {
+                    $order_inv_d = 'asc';
+                }
+            }
+        }
         if (!empty($products[0])) {
             $products[0]->get_name();
             $products[0]->get_image();
@@ -36,6 +85,11 @@ if (! function_exists('products_custom_shop')) {
             window.carInfo = [];
         </script>
         <div class="products-by-category">
+            <p>Order cars by: <br>
+                <a style="font-weight: <?php if($orderby == 'date') echo 1000; else echo 400;?>; font-size: 25px;" href="<?php echo site_url(); ?>?ch_orderby=date&ch_order=<?php echo $order_inv_d; ?>">Date</a><span style="font-size: 25px; font-weight: 750;"> - </span>
+                <a style="font-weight: <?php if($orderby == 'price') echo 1000; else echo 400;?>; font-size: 25px;" href="<?php echo site_url(); ?>?ch_orderby=price&ch_order=<?php echo $order_inv_p; ?>">Price</a>
+            </p>
+            <hr style="height:5px; margin-bottom: 15px; margin-top: 15px;">
             <ul>
             <?php
             $image='';
