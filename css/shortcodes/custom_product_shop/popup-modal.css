@@ -102,6 +102,7 @@
         color: white;
         font-weight: bold;
         border-radius: 12px;
+        text-align: center;
     }
 
     #car-info-popup-wrapper>#car-info-popup>.modal>.description>.info>ul {
@@ -222,13 +223,14 @@
         display: block;
         margin-left:auto;
         margin-right:auto;
-        width: 20%;
+        width: 25%;
         padding: 8px 12px;
         border: solid 1px grey;
         background-color: #B90000;
         color: white;
         font-weight: bold;
         border-radius: 12px;
+        text-align: center;
     }
 
     #car-info-popup-wrapper>#car-info-popup>.modal>.description>.info>ul {
@@ -256,14 +258,15 @@
     position: absolute;
     right: 15px;
     top: 15px;
-    width: 55px;
-    height: 55px;
-    line-height: 48px;
+    width: 1.5em;
+    height: 1.5em;
+    line-height: 1.2em;
+    font-size: 2em;
     color: rgb(105, 3, 3);
     background-color: #af2626;
-    z-index: 999999999999;
+    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' height='50px' width='50px'><text style='font-family: sans-serif; font-weight: 700;' x='24%' y ='72%' fill='red' font-size='45'>x</text></svg>");
+    background-position: center;
     border-radius: 50%;
-    font-size: 45px;
     text-align: center;
     font-weight: 900;
     cursor: pointer;
@@ -277,4 +280,5 @@
 .popup-cancel:hover {
     color: rgb(235, 83, 83);
     background-color: #550303;
+    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' height='50px' width='50px'><text style='font-family: sans-serif; font-weight: 700;' x='24%' y ='72%' fill='Tomato' font-size='45'>x</text></svg>");
 }
