@@ -302,4 +302,8 @@
     #contact-info .contact>*>* {
         float: left;
     }
+    .site-footer{
+        margin: 0;
+        min-width: 100%;
+    }
 }
