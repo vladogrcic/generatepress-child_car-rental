@@ -133,6 +133,7 @@
 
     #contact-info .contact {
         margin: 15px;
+        height: 25px;
     }
 
     #contact-info>*>*>* {
